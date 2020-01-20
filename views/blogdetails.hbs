@@ -1,0 +1,84 @@
+ <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 my-2">
+                    <div class="card  sidebar">
+                        <div class="card-body">
+                            <h3 class="pb-3">Categories</h3>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=CSS" class=" ">CSS</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=JavaScript" class=" ">JavaScript</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=Node.js" class=" ">Node.js</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=Express" class=" ">Express</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=MongoDB" class=" ">MongoDB</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=REST API" class=" ">REST API</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=Angular" class=" ">Angular</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=Bootsrap" class=" ">Bootsrap</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card  sidebar">
+                        <div class="card-body">
+                            <h3 class="pb-3">Related post</h3>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 my-3">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb color">
+                            <li class="breadcrumb-item bc-item"><a class="" href="/">Home</a></li>
+                            <li class="breadcrumb-item bc-item"><a class="" href="/blog">Blog</a></li>
+                            <li class="breadcrumb-item " aria-current="page">{{data.title}}</li>
+                        </ol>
+                    </nav>
+                    <!-- BLog Details -->
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h1 class="display-3 card-title  font-roboto text-dark">{{data.title}}</h1>
+                            <!-- Carousel -->
+                            <img src="{{data.img}}" class="img-fluid mb-4" alt="{{data.title}}">
+
+                            <p class="font-rubik font-size-20">{{data.blog}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
