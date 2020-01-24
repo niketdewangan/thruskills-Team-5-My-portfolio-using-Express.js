@@ -2,41 +2,56 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-9 py-3">
-          <h1 class="my-2 pb-2">Hi! I'm Niket Dewangan.</h1>
-          <span>I'm looking for opportunity. I’m honest and punctual, I work well in a team but also on my
+          <h1 class="my-2 pb-2 font-roboto">Hi! I'm Niket Dewangan.</h1>
+          <span class="font-rubik">I'm looking for opportunity. I’m honest and punctual, I work well in a team but also on my
             own as I like to set myself goals which I will achieve, I have good listening and
             communication skills. I have a creative mind
             and am always up for new challenges. I am well organized and always plan ahead to make sure
             I manage my time well.</span>
         </div>
         <div class="col-lg-3 py-3">
-          <img class="img-fluid profile-pic" src="/images/profile.jpeg">
+          <img class="img-fluid profile-pic shadow" src="/images/profile.jpeg">
 
         </div>
       </div>
       <hr class="my-2">
       <div class="row">
-        <div class="col-lg-12 d-flex justify-content-between">
+        <div class="col-md-6">
+        <h2 class="font-roboto">Subscribe to my newsletter</h2>
+    </div>
+    <div class="col-md-6 text-right">
+        <form action='/subscribe' method="POST">
+            <input type="email" name="email" class="place">
+            <button class="btn btn-outline-dark">Subscribe</button>
+        </form>
+        {{#if success}}
+        <p class="text-success">Subscribed successfully</p>
+        {{/if}}
+    </div>
+      </div>
+      <hr class="mb-2">
+      <div class="row">
+        <div class="col-lg-12  d-flex justify-content-between">
 
-          <h2 class="text-left">Recent Projects</h2>
-          <a class="text-right " href="/project">View All</a>
+          <h2 class="text-left font-roboto">Recent Projects</h2>
+          <a class="text-right font-roboto" href="/project">View All</a>
         </div>
       </div>
       <hr class="mb-2">
       <div class="row ">
         {{#each project}}
-        <div class="col-lg-4 my-4">
+        <div class="col-lg-4  my-4">
           <div class="card">
             <img class="card-img-top" src="{{img_1}}" alt="Card image">
             <div class="overlay-img card-bg">
               <div class="card-logo">
-                <h3 class="text-white text-center">{{title}}</h3>
+                <h3 class="text-white text-center font-roboto">{{title}}</h3>
 
               </div>
               <a href="/project/{{_id}}">
                 <div class="overlay">
-                  <h5 class="text-light project-title ">{{title}}</h5>
-                  <p class="text-light project-desc">{{desc}}</p>
+                  <h5 class="text-light project-title font-roboto">{{title}}</h5>
+                  <p class="text-light project-desc font-rubik">{{desc}}</p>
                 </div>
               </a>
             </div>
@@ -50,8 +65,8 @@
       <div class="row">
         <div class="col-lg-12 d-flex justify-content-between">
 
-          <h2 class="text-left">Recent Posts</h2>
-          <a class="text-right " href="/blog">View All</a>
+          <h2 class="text-left font-roboto">Recent Posts</h2>
+          <a class="text-right font-roboto" href="/blog">View All</a>
         </div>
 
       </div>
@@ -61,15 +76,15 @@
       <div class="row mb-2 p-3">
         <div class="col-lg-4 py-2 border-bottom">
           {{!-- <strong class="d-inline-block  text-primary">Bootstrap</strong> --}}
-          <h1 class="font-roboto">{{title}}</h1>
+          <a class="text-dark" href="/blog/{{_id}}"><h2 class="font-roboto font-rubik-mono">{{title}}</h2></a>
         </div>
         <div class="col-lg-4 py-2 border-bottom">
-          <p class=" font-rubik font-size-20 text-overflow pb-2">{{blog}}</p>
-          <a href="/blog/{{_id}}" class="font-rubik  text-primary font-weight-bold">Continue
+          <p class=" font-rubik font-size-20 text-overflow pb-2 block-with-text font-rubik">{{blog}}</p>
+          <a href="/blog/{{_id}}" class="font-rubik font-roboto text-primary font-weight-bold">Continue
             reading . . .</a>
         </div>
         <div class="col-lg-4 py-2 border-bottom">
-          <img class="img-fluid" src="{{img}}" alt="number guessing game">
+         <a href="/blog/{{_id}}"> <img class="img-fluid" src="{{img}}" alt="number guessing game"></a>
         </div>
       </div>
       {{/each}}

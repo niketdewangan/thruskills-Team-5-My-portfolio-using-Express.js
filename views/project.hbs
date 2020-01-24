@@ -1,6 +1,15 @@
  <main>
     <div class="container mb-5">
-      
+      <div class="row">
+        <div class="col-lg-12">
+          <nav aria-label="breadcrumb ">
+                        <ol class="breadcrumb ">
+                            <li class="breadcrumb-item bc-item font-roboto"><a class="" href="/">Home</a></li>
+                            <li class="breadcrumb-item font-roboto" aria-current="page">Project</li>
+                        </ol>
+                    </nav>
+        </div>
+      </div>
       <div class="row ">
         {{#each project}}
         <div class="col-lg-4 my-4">
@@ -8,13 +17,13 @@
             <img class="card-img-top" src="{{img_1}}" alt="Card image">
             <div class="overlay-img card-bg">
               <div class="card-logo">
-                <h3 class="text-white text-center">{{title}}</h3>
+                <h3 class="text-white text-center font-roboto">{{title}}</h3>
 
               </div>
               <a href="/project/{{_id}}">
                 <div class="overlay">
-                  <h5 class="text-light project-title ">{{title}}</h5>
-                  <p class="text-light project-desc">{{desc}}</p>
+                  <h5 class="text-light project-title font-roboto">{{title}}</h5>
+                  <p class="text-light project-desc font-rubik">{{desc}}</p>
                 </div>
               </a>
             </div>
