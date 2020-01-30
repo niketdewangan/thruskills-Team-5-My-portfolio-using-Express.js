@@ -1,0 +1,84 @@
+ <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 my-2">
+                    <div class="card  sidebar">
+                        <div class="card-body">
+                            <h3 class="pb-3">Categories</h3>
+                            <div>
+                                <a href="#" >HTML</a>
+                            </div>
+                            <div >
+                                <a href="#">CSS</a>
+                            </div>
+                            <div>
+                                <a href="#">JavaScript</a>
+                            </div>
+                            <div>
+                                <a href="#">Node.js</a>
+                            </div>
+                            <div>
+                                <a href="#">Express</a>
+                            </div>
+                            <div>
+                                <a href="#">MongoDB</a>
+                            </div>
+                            <div>
+                                <a href="#">REST API</a>
+                            </div>
+                            <div>
+                                <a href="#">Angular</a>
+                            </div>
+                            <div>
+                                <a href="#">Bootsrap</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card  sidebar">
+                        <div class="card-body">
+                            <h3 class="pb-3">Related post</h3>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+                            <div class="project-sidebar-links">
+                                <a href="/blog?category=HTML" class=" ">HTML</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 my-3">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb color">
+                            <li class="breadcrumb-item bc-item font-roboto"><a class="" href="/">Home</a></li>
+                            <li class="breadcrumb-item bc-item font-roboto"><a class="" href="/blog">Blog</a></li>
+                            <li class="breadcrumb-item font-roboto" aria-current="page">{{data.title}}</li>
+                        </ol>
+                    </nav>
+                    <!-- BLog Details -->
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h1 class="display-3 card-title  font-roboto text-dark">{{data.title}}</h1>
+                            <!-- Carousel -->
+                            <img src="{{data.img}}" class="img-fluid mb-4" alt="{{data.title}}">
+
+                            <p class="font-rubik font-size-20">{{data.blog}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>

@@ -1,0 +1,99 @@
+<div class="container-fluid back font-roboto">
+  
+  <div class="my-dashboard">
+    <div class="sidebar main-bg">
+
+      <nav class="navbar navbar-expand-lg custom-navbar navbar-light ">
+        <h3 class=" brand sidebar-text-color navbar-border-bottom">Menu</h3>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars font-25 toggle-button"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-ul">
+            <li class="nav-item ">
+              <a class=" custom-nav-link " href="/adminpanel/projects">Projects </a>
+
+            </li>
+            <li class="nav-item ">
+              <a class="custom-nav-link   " href="/adminpanel/blog">Blogs </a>
+
+            </li>
+            <li class="nav-item ">
+              <a class=" custom-nav-link " href="/adminpanel/contactlist">Content </a>
+
+            </li>
+            <li class="nav-item ">
+              <a class=" custom-nav-link " href="/adminpanel/subscribelist">Subscribers </a>
+
+            </li>
+            <li class="nav-item">
+              <a class="custom-nav-link logout-list" href="/adminpanel/logout">Sign Out</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+  <div class="row m-0 ">
+    <div class="col-lg-12">
+      <div class="my-content ">
+        <a href="/adminpanel/newblog" class="btn btn-primary p-2 m-2 float-right">Create New blog</a>
+        <h1 class="py-2 border-bottom data-color ">Blogs</h1>
+        
+        <div class="card p-4">
+          <div class="card-body p-0 overflow-auto">
+            <h4 class="data-color">Blog Table</h4>
+            <table class="table table-striped">
+              <thead class="main-bg text-light ">
+                <tr>
+                  
+                  <th scope="col">Image</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Description</th>
+                  <th scope="col" class="text-center" colspan="2">Action</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+
+                  {{#each blist}}
+                <tr>
+                  
+                  <td><img src="{{img}}" width="50" height="50"></td>
+                  <td >{{title}}</td>
+                  <td ><p class="over-text-hidden">{{blog}}</p></td>
+                  <td>
+                    <a href="blog/{{_id}}">Details</a>
+
+                  </td>
+                  <td>
+                    <a href="blog/{{_id}}/delete">Delete</a>
+
+                    </td>
+
+                </tr>
+                {{/each}}
+               
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

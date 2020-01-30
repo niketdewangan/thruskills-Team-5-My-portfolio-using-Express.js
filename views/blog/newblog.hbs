@@ -1,0 +1,27 @@
+<div class="container">
+    <div>
+    <h1>Create a new Blog</h1>
+    <hr>
+    <br>
+
+    <form action="/adminpanel/newblog" method="POST">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="title">Title</label>
+                <input type="text" name="title" class="form-control" id="title" placeholder="Blog title">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="image">Image</label>
+                <input type="text" name="image" class="form-control" id="image" placeholder="Blog image url">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description">Blog Content</label>
+            <textarea class="form-control" id="description" placeholder="Blog Content" name="description" rows="5"></textarea>
+        </div>
+        
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</div>
