@@ -4,9 +4,6 @@
 .font-25{
     font-size: 25px;
 }
-.font-25rem{
-    font-size: 2.5rem;
-}
 .font-grey{
     color: rgb(104, 105, 114);
 }
@@ -150,6 +147,7 @@
     position: relative;
     line-height: 1.2em;
     max-height: 9.6em;
+    text-align: justify;
     margin-right: -1em;
     padding-right: 1em;
 }

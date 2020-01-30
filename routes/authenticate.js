@@ -5,7 +5,7 @@ var router = express.Router();
 // var ObjectId = require('mongodb').ObjectID;
 // var url = "mongodb://localhost:27017/";
 let admins = [
-  { email: 'niket@gmail.com', password: '1234', name: 'Niket' }
+  { email: 'niket.dewangan11@gmail.com', password: 'niket123!@#', name: 'Niket' }
 ]
 
 
